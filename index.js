@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://invent-app-fawn.vercel.app"],
+    origin: ["http://localhost:3000", "https://invent-app-seven-fawn.vercel.app"],
     credentials: true,
   })
 );
