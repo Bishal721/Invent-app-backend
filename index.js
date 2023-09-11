@@ -17,7 +17,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["*"],
+    origin: [
+      "http://localhost:3000",
+      "https://invent-app-seven-fawn.vercel.app/",
+    ],
     credentials: true,
   })
 );
@@ -37,7 +40,7 @@ app.get("/", (req, res) => {
 
 app.use(errorhandler);
 
-const PORT = 80 || process.env.PORT;
+const PORT = 443 || process.env.PORT;
 // Connect TO Database and start
 const startServer = async () => {
   try {
