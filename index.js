@@ -19,7 +19,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://invent-app-seven-fawn.vercel.app/",
+      "https://invent-app-seven-fawn.vercel.app",
     ],
     credentials: true,
   })
